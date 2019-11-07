@@ -60,7 +60,7 @@ données_france <- données %>%
 
 # crée une structure avec les données pour une sélection de pays de l'OCDE
 données_autres <- données %>%
-  filter(cntry %in% c("Allemagne", "Suède", "Danemark", "États-Unis", "Italie", "Israël", "OCDE", "Royaume-Uni"))
+  filter(cntry %in% c("Allemagne", "Suède", "Danemark", "États-Unis", "Israël", "OCDE", "Royaume-Uni"))
 
 ggplot(données_france, aes(x = year, y = AvgS_ImmPol, group = cntry, color = cntry)) +
   geom_line(size = 1) +
